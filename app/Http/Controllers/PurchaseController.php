@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PointsAdded;
 use App\Http\Requests\PurchaseRequest;
 use App\Models\Drink;
 use App\Models\Purchase;
@@ -31,6 +32,9 @@ class PurchaseController extends Controller
     public function store(PurchaseRequest $request): JsonResponse
     {
         Purchase::insert($request->validated()['purchases']);
+
+//        event(new PointsAdded("Hallo Lukas"));
+
         return new JsonResponse('', 200);
     }
 }
