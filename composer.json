@@ -11,8 +11,6 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^2.14.1",
         "laravel/tinker": "^2.7",
-        "predis/predis": "^2.0",
-        "protoqol/prequel": "^1.23",
         "pusher/pusher-php-server": "^7.0"
     },
     "require-dev": {
